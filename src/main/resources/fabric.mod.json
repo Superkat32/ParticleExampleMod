@@ -2,29 +2,31 @@
   "schemaVersion": 1,
   "id": "modid",
   "version": "${version}",
-  "name": "Example Mod",
-  "description": "dummy",
+
+  "name": "Particle Example Mod",
+  "description": "An example mod for adding particles.",
   "authors": [
     "Luligabi"
   ],
-  "contact": {
-    "website": "dummy",
-    "repo": "dummy"
-  },
   "license": "unlicense",
-  "icon": "assets/examplemod/icon.png",
+  "icon": "assets/modid/icon.png",
   "environment": "*",
   "entrypoints": {
     "client": [
-      "me.luligabi.tutorial.ExampleModClient"
+      "net.fabricmc.example.ExampleModClient"
     ],
     "main": [
-      "me.luligabi.tutorial.ExampleMod"
+      "net.fabricmc.example.ExampleMod"
     ]
   },
+
   "depends": {
-    "fabricloader": ">=0.11.3",
-    "fabric": "*",
-    "minecraft": "1.17.x"
+    "fabricloader": ">=0.14.11",
+    "fabric-api": "*",
+    "minecraft": "~1.19.3",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
   }
 }
